@@ -77,6 +77,11 @@
             rgba(255, 255, 255, 0.2) 0.39%,
             rgba(139, 191, 239, 0.6) 138.71%);
     position: relative;
+    padding-bottom: 120px;
+}
+
+.tariff-why {
+    padding-top: 120px;
 }
 
 .tariffs_hero::before {
@@ -463,6 +468,10 @@
 
     .tariffs_hero-3::before {
         top: 70px;
+    }
+
+    .tariff-why, .tariffs_hero {
+        padding-bottom: 90px;
     }
 }
 
