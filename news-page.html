@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Traffic</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Glightbox css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="header_container">
+                <div class="container">
+                    <div class="header_block">
+                        <div class="header_top">
+                            <a href="#" class="logo">
+                                <img src="./assets/imgs/logo.svg" alt="">
+                            </a>
+                            <div class="h_top_actions">
+                                <div class="work_time">
+                                    <img src="./assets/imgs/h_clock_ic.svg" alt="">
+                                    9:00 - 20:00
+                                </div>
+                                <a href="tel:88001000258" class="h_tel">8 (800) 100-02-58</a>
+                                <div class="h_btns desc">
+                                    <a href="#" class="leave_request_btn btn_z_white open-modal">Оставить заявку</a>
+                                    <a href="#" class="login_btn btn_z_blue"><img src="./assets/imgs/exit.svg" alt=""> Войти</a>
+                                </div>
+                            </div>
+                            <div class="header_mobile_actions">
+                                <div class="language_toggle">
+                                  <img src="./assets/imgs/lang_ic_mob.svg" alt="">
+                                  <ul class="language_dropdown">
+                                    <li data-lang="ru">RU</li>
+                                    <li data-lang="by">BY</li>
+                                    <li data-lang="kz">KZ</li>
+                                    <li data-lang="uz">UZ</li>
+                                  </ul>
+                                </div>
+                                <div class="bars_menu">
+                                  <a href="#" aria-label="Toggle menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </a>
+                                </div>
+                            </div>
+                            <div class="mobile_menu">
+                                <div class="container">
+                                    <ul class="header_menu mob">
+                                        <li>Содержание</li>
+                                        <li><a href="#newsletter">Рассылка — что такое?</a></li>
+                                        <li><a href="#newsletter_types">Виды рассылок сообщений</a></li>
+                                        <li><a href="#rules_newsletter">Правила: как сделать массовую рассылку</a></li>
+                                        <li><a href="#service_newsletter">Что такое сервис рассылок</a></li>
+                                        <li><a href="#options_newsletter">Как использовать возможности рассылки и не попасть в спам</a></li>
+                                        <li><a href="#examples_newsletter">Примеры</a></li>
+                                        <li><a href="#short_main_newsletter">Коротко о главном</a></li>
+                                    </ul>
+                                    <div class="h_menu_mob_top">
+                                        <div class="work_time">
+                                            <img src="./assets/imgs/h_clock_ic.svg" alt="">
+                                            9:00 - 20:00
+                                        </div>
+                                        <a href="tel:88001000258" class="h_tel">8 (800) 100-02-58</a>
+                                    </div>
+                                    <div class="h_btns mob">
+                                        <a href="#" class="leave_request_btn btn_z_white open-modal">Оставить заявку</a>
+                                        <a href="#" class="login_btn btn_z_blue"><img src="./assets/imgs/exit.svg" alt=""> Войти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_bottom">
+                            <ul class="header_menu desc">
+                                <li><a href="#" data-submenu="about">О нас</a></li>
+                                <li><a href="#" data-submenu="platforma">Платформа</a></li>
+                                <li><a href="#" data-submenu="resheniya">Решения</a></li>
+                                <li><a href="#" data-submenu="uslugi">Услуги</a></li>
+                                <li><a href="#" data-submenu="kanaly">Каналы</a></li>
+                                <li><a href="#" data-submenu="tarify">Тарифы</a></li>
+                                <li><a href="#" data-submenu="insayty">Инсайты</a></li>
+                                <li><a href="#" data-submenu="kontakty">Контакты</a></li>
+                            </ul>
+                            <div class="custom_lang_dropdown">
+                                <button class="lang_trigger">
+                                  <img src="./assets/imgs/lang_ic.svg" alt="">
+                                  <span>RU</span>
+                                  <svg class="arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                  </svg>
+                                </button>
+                                <ul class="lang_list">
+                                  <li data-lang="ru">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>RU</b><span>русский</span></div>
+                                  </li>
+                                  <li data-lang="by">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>BY</b><span>русский</span></div>
+                                  </li>
+                                  <li data-lang="kz">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>KZ</b><span>Қазақ тілі</span></div>
+                                  </li>
+                                  <li data-lang="yz">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>YZ</b><span>русский</span></div>
+                                  </li>
+                                  <li data-lang="ae">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>AE</b><span>русский</span></div>
+                                  </li>
+                                  <li data-lang="en">
+                                    <img src="./assets/imgs/flags/ru.svg" alt="">
+                                    <div><b>EN</b><span>english</span></div>
+                                  </li>
+                                </ul>
+                            </div>                              
+                        </div>
+                    </div>
+                    <!-- Umumiy submenu container -->
+                    <div class="unique_submenu_container">
+                        <!-- About -->
+                        <div class="unique_submenu_block" data-submenu="about">
+                            <div class="unique_submenu_block_about">
+                                <div class="unique_submenu_block_about_l">
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>О нас</h4>
+                                        <p>SMS Traffic - одна из крупнейших компаний на рынке бизнес-коммуникаций России и СНГ.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Новости и Статьи</h4>
+                                        <p>Все о рассылках: <br> Статьи и полезная информация.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Лицензии</h4>
+                                        <p>Лицензиии компании на оказание услуг.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Мы в СМИ</h4>
+                                        <p>Публикации в прессе о наших самых интересных проектах .</p>
+                                    </a>
+                                </div>
+                                <div class="unique_submenu_block_about_r">
+                                    <a href="#" class="articles_item">
+                                        <img src="./assets/imgs/articles_1.png" alt="">
+                                        <div class="articles_item_content">
+                                            <p>
+                                                Массовые рассылки: виды, примеры массовых рассылок в интернете
+                                            </p>
+                                            <span>
+                                                26.05.2024
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="articles_item">
+                                        <img src="./assets/imgs/articles_1.png" alt="">
+                                        <div class="articles_item_content">
+                                            <p>
+                                                Массовые рассылки: виды, примеры массовых рассылок в интернете
+                                            </p>
+                                            <span>
+                                                26.05.2024
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Platforma -->
+                        <div class="unique_submenu_block" data-submenu="platforma">
+                            <div class="white_boxs platform">
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_1.svg" alt="">
+                                        SMS-рассылка
+                                    </a>
+                                    <p>
+                                        Рассылка СМС сообщений - эффективный способ маркетинговых коммуникаций  с представителями ЦА посредством сотовой связи
+                                    </p>
+                                </div>
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_3.svg" alt="">
+                                        Каскадная рассылка
+                                    </a>
+                                    <p>
+                                        Платформа для отправки сообщений в разные каналы, имеющие статус официальных (SMS, мессенджеры, соц. сети и PUSH), с возможностью составления маршрута очередности каналов (каскад).
+                                    </p>
+                                </div>
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_4.svg" alt="">
+                                        Мобильная PUSH платформа
+                                    </a>
+                                    <p>
+                                        Рассылка PUSH уведомлений позволяет значительно сократить расходы на рассылку сервисных, транзакционных и рекламных сообщений по аудитории, установившей ваше мобильное приложение на платформах Apple или Android
+                                    </p>
+                                </div>
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_5.svg" alt="">
+                                        Чат-платформа
+                                    </a>
+                                    <p>
+                                        Продукт, позволяющий компании вести диалог с клиентами и получать обратную связь через любой удобный канал. Абонент, получивший сообщение, может задать интересующие вопросы оператору.
+                                    </p>
+                                </div>
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_6.svg" alt="">
+                                        CDP платформа
+                                    </a>
+                                    <p>
+                                        CXDP собирает и объединяет клиентские данные из различных источников, таких, как веб-сайты, мобильные приложения, CRM, программы лояльности и др.
+                                    </p>
+                                </div>
+                                <div class="white_box">
+                                    <a href="#">
+                                        <img src="./assets/imgs/advan_ic_2.svg" alt="">
+                                        SMS шлюз
+                                    </a>
+                                    <p>
+                                        Смс-шлюз представляет собой программную платформу, обеспечивающий отправку и получение коротких текстовых сообщений.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Resheniya -->
+                        <div class="unique_submenu_block" data-submenu="resheniya">
+                            <div class="unique_submenu_block_resheniya">
+                                <ul class="unique_submenu_block_resheniya_ul">
+                                    <li><a href="#">По направлениям</a></li>
+                                    <li><a href="#">По департаментам</a></li>
+                                    <li><a href="#">По индустриям</a></li>
+                                </ul>
+                                <div class="unique_submenu_block_resheniya_items">
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Реклама</h4>
+                                        <p>SMS Traffic - одна из крупнейших компаний на рынке бизнес-коммуникаций России и СНГ.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Авторизация</h4>
+                                        <p>Все о рассылках: 
+                                            Статьи и полезная информация.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Сервис</h4>
+                                        <p>Лицензиии компании на оказание услуг.</p>
+                                    </a>
+                                    <a href="#" class="unique_submenu_block_item">
+                                        <h4>Лояльность</h4>
+                                        <p>Публикации в прессе о наших самых интересных проектах .</p>
+                                    </a>
+                                </div>
+                                <a href="#" class="articles_item resheniya">
+                                    <img src="./assets/imgs/articles_1.png" alt="">
+                                    <div class="articles_item_content">
+                                        <p>
+                                            Массовые рассылки: виды, примеры массовых рассылок в интернете
+                                        </p>
+                                        <span>
+                                            26.05.2024
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Uslugi -->
+                        <div class="unique_submenu_block" data-submenu="uslugi">
+                            <div class="unique_submenu_block_uslugi">
+                                <a href="#" class="unique_submenu_block_item">
+                                    <h4>Mobile ID</h4>
+                                    <p>Множество параметров и гибкие настройки таргетинга для максимального попадания 
+                                        в аудиторию и отклика.</p>
+                                </a>
+                                <a href="#" class="unique_submenu_block_item">
+                                    <h4>Таргетированные SMS рассылки </h4>
+                                    <p>Множество параметров и гибкие настройки таргетинга для максимального попадания 
+                                        в аудиторию и отклика.</p>
+                                </a>
+                                <a href="#" class="unique_submenu_block_item">
+                                    <h4>IMSI</h4>
+                                    <p>Множество параметров и гибкие настройки таргетинга для максимального попадания 
+                                        в аудиторию и отклика.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Kanaly -->
+                        <div class="unique_submenu_block" data-submenu="kanaly">
+                            <div class="unique_submenu_block_kanaly">
+                                <a href="#" class="channels_a">Каналы</a>
+                                <nav>
+                                    <a href="#" class="kanaly_main_a">Рассылки</a>
+                                    <ul class="kanaly_mailing_ul">
+                                        <li>
+                                            <a href="#">SMS </a>
+                                            <ul class="kanaly_mailing_ul_submenu">
+                                                <li><a href="#">По опереторам</a></li>
+                                                <li><a href="#">По странам</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">App Push</a></li>
+                                    </ul>
+                                </nav>
+                                <nav>
+                                    <a href="#" class="kanaly_main_a">Рассылки и двухсторонняя коммуникация</a>
+                                    <ul class="unique_submenu_block_kanaly_ul">
+                                        <li><a href="#">Viber Business messages<img src="./assets/imgs/viber_ic_sm.svg" alt=""></a></li>
+                                        <li><a href="#">Viber Bots<img src="./assets/imgs/viber_ic_sm.svg" alt=""></a></li>
+                                        <li><a href="#">WhatsApp Business API<img src="./assets/imgs/whatsapp_ic_sm.svg" alt=""></a></li>
+                                        <li><a href="#">Notify.Mail.ru <div class="ics"><img src="./assets/imgs/ok_ic_sm.svg" alt=""><img src="./assets/imgs/vk_ic_sm.svg" alt=""></div></a></li>
+                                        <li><a href="#">Telegram<img src="./assets/imgs/tg_ic_sm.svg" alt=""></a></li>
+                                        <li><a href="#">Email<img src="./assets/imgs/email_ic_sm.svg" alt=""></a></li>
+                                                                <li><a href="#">FlashCall<img src="./assets/imgs/flashcall_ic_sm.svg" alt=""></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="news_page_section">
+            <div class="container">
+                <div class="news_page_block">
+                    <div class="news_page_left api_page_left sticky_api">
+                        <ul>
+                            <li>Содержание</li>
+                            <li><a href="#newsletter">Рассылка — что такое?</a></li>
+                            <li><a href="#newsletter_types">Виды рассылок сообщений</a></li>
+                            <li><a href="#rules_newsletter">Правила: как сделать массовую рассылку</a></li>
+                            <li><a href="#service_newsletter">Что такое сервис рассылок</a></li>
+                            <li><a href="#options_newsletter">Как использовать возможности рассылки и не попасть в спам</a></li>
+                            <li><a href="#examples_newsletter">Примеры</a></li>
+                            <li><a href="#short_main_newsletter">Коротко о главном</a></li>
+                        </ul>
+                    </div>
+                    <div class="news_page_right">
+                        <ul class="breadcrumb_z">
+                            <li><a href="#">SMS Traffic</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li>Массовые рассылки: виды, примеры массовых рассылок в интернете</li>
+                        </ul>
+                        <div class="news_page_main_img">
+                            <img src="./assets/imgs/news_page_main_img.png" alt="">
+                            <h3>
+                                МАССОВЫЕ РАССЫЛКИ: <br>
+                                ВИДЫ, ПРИМЕРЫ МАССОВЫХ <br> РАССЫЛОК В ИНТЕРНЕТЕ
+                            </h3>
+                        </div>
+                        <div class="date_time">
+                            <span><img src="./assets/imgs/clock_ic.svg" alt="">Время чтения: 5 мин</span>
+                            <span><img src="./assets/imgs/calendar_ic.svg" alt="">26.05.2024</span>
+                        </div>
+                        <h5 id="newsletter">
+                            Рассылка — что такое?
+                        </h5>
+                        <p>
+                            Массовая рассылка – это отправка однотипных или схожих сообщений широкой аудитории. Получателями становятся все подписчики или отдельные группы, которые сегментировали по полу, действиям и другим критериям. Для отправлений используют мессенджеры, социальные сети, электронную почту и смс. <br><br>
+
+                            Хотя на первый взгляд такая рассылка писем похожа на спам, на деле она основана на принципе добровольного участия. Это значит, что сообщения отправляются только тем адресатам, кто выразил согласие на получение информации от определенного бренда или компании. <br><br>
+
+                            В отличие от неконтролируемых спам-рассылок, которые часто несут в себе нежелательную информацию, массовые отправки строятся на анализе целевой аудитории. Получателям приходит полезный и информативный контент. За счет этого у бренда растут продажи, клиенты оперативно получают новости, узнают об акциях. У компании укрепляется связь с аудиторией — это важно для долгосрочных отношений.
+                        </p>
+                        <h5 id="newsletter_types">
+                            Виды рассылок сообщений
+                        </h5>
+                        <p>
+                            <b>Рекламные письма.</b> <br>
+                            Цель — продвижение текущих скидок, акций и предложений бренда. Массовая рассылка рекламы обычно состоит из серии связанных писем, которые стимулируют продажи и привлекают внимание к продуктам и услугам. Они отправляются постепенно, не одновременно. <br><br>
+
+                            <b>Информационные.</b> <br>
+                            Цель — передать важные новости о компании, продуктах или изменениях. Это помогает подписчикам быть в курсе последних событий и изменений в компании, что укрепляет связь с брендом. <br><br>
+
+                            <b>Контентные.</b> <br>
+                            Цель — предоставить получателям ценный контент, выступить экспертами в своей области и укрепить доверие. Такие письма содержат статьи, видео и другие познавательные или развлекательные материалы. <br><br>
+
+                            <b>Триггерные.</b> <br>
+                            Цель — отправить персонализированные сообщения в ответ на действия пользователя. Письмо приходит автоматически после определенного события. После покупки — персонализированные рекомендации. Если товар долго лежит в корзине — напоминание перейти на сайт и завершить действие. <br><br>
+
+                            <b>Транзакционные.</b> <br>
+                            Цель — подтвердить оплату или предоставить информацию о статусе доставки. Так клиентов информируют об успешной транзакции. <br><br>
+
+                            <b>Онбординг.</b> <br>
+                            Цель — представиться новым подписчикам или напомнить о функционале старым. Контент здесь — мини-инструкции и обзоры, чтобы помочь сориентироваться в продуктах и услугах. <br><br>
+ 
+                            <b>Ситуационные.</b> <br>
+                            Эти массовые рассылки сообщений создают в связи с конкретными событиями или праздниками. Они нужны, чтобы поддерживать связь с аудиторией и заодно рассказать об актуальных мероприятиях. <br><br>
+
+                            <b>Исследовательские.</b> <br>
+                            Цель — собрать мнение аудитории, получить отзывы о продуктах или услугах. После анализа фидбека компания сможет улучшить работу.
+                        </p>
+                        <h5 id="rules_newsletter">
+                            Правила: как сделать массовую рассылку
+                        </h5>
+                        <ol>
+                            <li>
+                                Используйте узнаваемое имя и пропишите тему. Они должны точно отражать, кто отправляет сообщение и о чем оно. Это увеличит число открытий.
+                            </li>
+                            <li>
+                                Убедитесь, что контакты в базе данных получены с согласия пользователей. Это поможет избежать проблем с репутацией и повысит уровень доверия к рассылкам.
+                            </li>
+                            <li>
+                                Делайте привлекательный и последовательный дизайн. Избегайте перегрузки изображениями и анимациями, чтобы обеспечить корректную загрузку для всех пользователей.
+                            </li>
+                            <li>
+                                Добавьте кнопки, которые направляют получателей к конкретному действию — покупке, регистрации на мероприятие или переходу на сайт.
+                            </li>
+                            <li>
+                                Тестируйте письма перед отправкой. Проверьте, что они отображаются корректно на разных устройствах.
+                            </li>
+                            <li>
+                                Не перегружайте аудиторию частыми письмами. Слишком много сообщений вызовут раздражение у получателя. Оптимальная частота обычно составляет одну-две в месяц.
+                            </li>
+                            <li>
+                                Включите в подпись точные сведения о компании и контактную информацию, чтобы обеспечить прозрачность в общении с аудиторией.
+                            </li>
+                        </ol><br><br><br>
+                        <b>Чек-лист эффективной рассылки:</b><br><br>
+                        <ul>
+                            <li>
+                                <b>Запоминающаяся тема</b> — короткая и привлекательная для получателя.
+                            </li>
+                            <li>
+                                <b>Краткость.</b> Письмо должно быть коротким и сосредоточено на одном главном пункте. Избегайте длинных блоков.
+                            </li>
+                            <li>
+                                <b>Сегментация получателей.</b> Разделите адресатов на группы, чтобы отправлять персонализированные сообщения — на основе предпочтений и интересов.
+                            </li>
+                            <li>
+                                <b>Отсутствие спам-слов.</b>
+                            </li>
+                            <li>
+                                <b>Оптимизация для мобильных устройств.</b>
+                            </li>
+                            <li>
+                                <b>Интерактивные элементы.</b> Они привлекают внимание и повышают вовлеченность.
+                            </li>
+                            <li>
+                                <b>Оптимизация времени отправки.</b> Нужно учитывать, когда аудитория активна.
+                            </li>
+                        </ul>
+                        <h5 id="service_newsletter">
+                            Что такое сервис рассылок
+                        </h5>
+                        <p>
+                            Рассыльщик — это сервис, который упрощает создание и отправку писем. Специальные настройки обеспечивают аутентификацию отправителя — это нужно, чтобы избежать попадания в спам. Доставляемость повышается. <br><br>
+
+                            Сервис предоставляет подробную статистику о результатах: количество отправленных и открытых писем, переходов по ссылкам. По ним легко анализировать эффективность кампаний и вносить коррективы.
+                            Большинство сервисов предлагают шаблоны отправлений, которые можно настроить под свои цели. Даже без дизайнерских навыков получится создать привлекательный контент. <br><br>
+
+                            Сервис групповой рассылки позволяет проводить A/B-тестирование разных вариантов — это нужно, чтобы определить, какой из них более эффективен, и получить высокий отклик аудитории. Сайты-рассыльщики не полностью берут на себя вопрос, как сделать рассылку — они не создают контент и не анализируют потребности бизнеса. Но упрощают работу.
+                        </p>
+                        <h5 id="options_newsletter">
+                            Как использовать возможности рассылки и не попасть в спам
+                        </h5>
+                        <p>
+                            Чтобы не попасть в спам и добиться желаемых результатов, важно следовать определенным рекомендациям.
+                        </p>
+                        <br><br>
+                        <ol>
+                            <li>
+                                Используйте метод двойного согласия, когда пользователи подтверждают подписку через ссылку в электронном письме после создания аккаунта на сайте.
+                            </li>
+                            <li>
+                                При массовых рассылках email регулярно проверяйте, не попал ли IP-адрес в блок. Помогут сайты для мониторинга репутации. И регулярно очищайте список адресатов от неактивных подписчиков.
+                            </li>
+                            <li>
+                                Настройте записи в Sender Policy Framework (SPF), Domain-based Message Authentication, Reporting and Conformance (DMARC), DomainKeys Identified Mail (DKIM). Эти методы аутентификации обеспечат легитимность электронных писем.
+                            </li>
+                            <li>
+                                Добавьте кнопку для отказа от подписки — это поможет избежать жалоб и пометок о спаме. Доверие аудитории к бренду вырастет.
+                            </li>
+                            <li>
+                                Не наращивайте объем слишком быстро, чтобы не выглядеть подозрительно для почтовых агентов. В массовой рассылке писем по e-mail постепенно увеличивайте количество адресов в списке.
+                            </li>
+                            <li>
+                                Остерегайтесь слов и фраз, которые часто ассоциируются со спамом. Пишите информативно, избегайте триггерных слов — «только сейчас, «срочно», «скидки», «низкая цена». Не злоупотребляйте восклицательными знаками и капслоком.
+                            </li>
+                        </ol>
+                        <h5 id="examples_newsletter">
+                            Примеры
+                        </h5>
+                        <div class="div"><img src="./assets/imgs/news_page_1.png" alt=""></div>
+                        <span>
+                            Исследовательская рассылка сообщений от сети кинотеатров. Сообщение приходит тем, кто сходил на сеанс. В теме письма указывают, что обратная связь не займет больше трех минут — это побуждает получателя все-таки оставить отзыв.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_2.png" alt=""></div>
+                        <span>
+                            Ситуативная рассылка от «Яндекса» с призывом зарегистрироваться на мероприятие.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_3.png" alt=""></div>
+                        <span>
+                            Онбординг-письмо от сервиса по поиску работы. Массовая рассылка приходит пользователям, у которых уже есть аккаунт на сайте — кнопка ведет на полезную инструкцию.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_4.png" alt=""></div>
+                        <span>
+                            Транзакционное письмо от магазина — подтверждает оплату и сообщает о следующих этапах.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_5.png" alt=""></div>
+                        <span>
+                            Триггерная рассылка подводит итоги за месяц и вместе с тем призывает продолжить сотрудничество — рассказывает, как получить еще больше бонусов.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_6.png" alt=""></div>
+                        <span>
+                            Контентное письмо от магазина электроники с развлекательной статьей. Внимание привлекают за счет медийной личности.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_7.png" alt=""></div>
+                        <span>
+                            Информационное письмо — компания сообщает об изменениях в работе и новой услуге.
+                        </span>
+                        <div class="div"><img src="./assets/imgs/news_page_8.png" alt=""></div>
+                        <span>
+                            Рекламная общая рассылка: яркая картинка, важная информация в теме и акцент на скидку.
+                        </span>
+                        <h5 id="short_main_newsletter">
+                            Коротко о главном
+                        </h5>
+                        <p>
+                            <a href="#">Сервисы массовых рассылок</a> <b>писем упрощают отправку.</b> В них легко настроить как одинаковый поток писем, так и персонализированный. В сервисах есть шаблоны, A/B-тестирование и инструменты для проверки на спамность.
+                            <br><br>
+
+                            <b>Интернет-рассылка</b> — это подходящий метод для бизнесов разной направленности. Можно отправлять рекламные сообщения с информацией об акциях, можно повышать доверие к бренду за счет экспертного контента, а можно совмещать, чтобы увеличить эффективность. <br><br>
+                            
+                            <b>Нужно соблюдать правила платформы, с которой работаете.</b> Если результата от писем нет, возможно вас внесли в черный список — что значит рассылка попала в спам. Перед запуском стоит убедиться, что адресаты в базе данных дали согласие, и добавить кнопку для отписки. <br><br>
+                            
+                            <b>Чем качественнее контент, тем он эффективнее.</b> Нужно создавать хороший дизайн, сохранять краткость и проводить тестирование перед отправкой.
+                        </p>
+                        <div class="authors">
+                            Автор: Иван Иванов | Главный редактор Sms Traffic
+                        </div>
+                        <div class="did_you_like">
+                            <p>Вам понравился материал?</p>
+                            <div class="likes_btns">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                        <path d="M10.5101 13.3076V28.3979C10.5101 29.6013 11.4866 29.9345 11.9749 29.9506H26.9643C27.5502 29.7403 28.7709 29.2228 28.9662 28.0582C29.1615 26.8937 28.4617 25.988 28.0873 25.6807C28.7383 25.3734 30.0404 24.4676 30.0404 23.3031C30.0404 22.1386 29.4544 21.4916 29.1615 21.3137C29.78 21.0711 31.0169 20.285 31.0169 19.0817C31.0169 17.8783 30.431 17.1246 30.138 16.8982C30.7076 16.785 31.8762 16.1509 31.9934 14.5206C32.1106 12.8903 30.6425 12.1268 29.8939 11.9489H20.7146C21.1541 11.0755 22.5672 7.9216 22.863 4.86475C23.3512 -0.18154 19.2011 -0.0359743 18.8104 0.0125477C18.4198 0.0610698 18.1269 1.61377 18.1757 3.6517C18.2148 5.28204 17.8339 5.94841 17.6386 6.0778C16.9551 7.29085 12.9025 10.5903 11.9749 11.4152C11.2327 12.0751 10.6728 12.9356 10.5101 13.3076Z" fill="#0076E2"/>
+                                        <path d="M0 13.7936C0 12.7217 0.8744 11.8528 1.95303 11.8528H6.83559C7.91422 11.8528 8.78862 12.7217 8.78862 13.7936V28.0591C8.78862 29.131 7.91422 30 6.8356 30H1.95303C0.874402 30 0 29.131 0 28.0591V13.7936Z" fill="#0076E2"/>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                        <path d="M21.3563 16.694V1.60365C21.3563 0.400269 20.3858 0.0671291 19.9006 0.0509796H5.00435C4.42208 0.261242 3.20903 0.778811 3.01494 1.94334C2.82086 3.10787 3.51634 4.01361 3.88834 4.32092C3.24138 4.62823 1.94746 5.53397 1.94746 6.6985C1.94746 7.86303 2.52972 8.50999 2.82086 8.6879C2.20624 8.93051 0.977019 9.71657 0.977019 10.9199C0.977019 12.1233 1.55928 12.877 1.85041 13.1034C1.28432 13.2166 0.12303 13.8506 0.00657672 15.481C-0.109875 17.1113 1.34902 17.8747 2.09303 18.0527H11.2152C10.7785 18.926 9.37413 22.08 9.0802 25.1368C8.59498 30.1831 12.7193 30.0376 13.1075 29.989C13.4957 29.9405 13.7868 28.3878 13.7383 26.3499C13.6995 24.7195 14.078 24.0532 14.2721 23.9238C14.9514 22.7107 18.9787 19.4112 19.9006 18.5864C20.6381 17.9265 21.1945 17.066 21.3563 16.694Z" fill="#0076E2"/>
+                                        <path d="M31.9357 14.7437C31.9357 16.6234 30.4118 18.1472 28.5321 18.1472H26.6052C24.7255 18.1472 23.2017 16.6234 23.2017 14.7437V3.40356C23.2017 1.52382 24.7255 0 26.6052 0H28.5321C30.4118 0 31.9357 1.52382 31.9357 3.40355V14.7437Z" fill="#0076E2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <div class="footer_left">
+                        <a href="#" class="logo_f"><img src="./assets/imgs/logo.svg" alt=""></a>
+                        <div class="footer_subtitle">
+                            Кейсы и экспертиза, исследования, события, главное за квартал и курс автоматизации маркетинга.
+                        </div>
+                        <form class="subscribe_form">
+                            <input type="email" placeholder="Укажите email" class="subscribe_input">
+                            <button class="subscribe_btn">Подписаться</button>
+                        </form>
+                        <div class="agree_text">
+                            <p>
+                                Я соглашаюсь получать рекламные и иные сообщения <br> от ООО «СМС Трафик» на условиях
+                            </p>
+                            <p>
+                                <a href="https://www.smstraffic.ru/personal-data">Политика в отношении персональных данных</a><br>
+                                Правила оказания услуг (от 26.09.2024)
+                            </p>
+                        </div>
+                        <ul class="f_actions">
+                            <li>
+                                <a href="mailto:info@smstraffic.ru">
+                                    info@smstraffic.ru
+                                    <span>По общим вопросам</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:pr@smstraffic.ru">
+                                    pr@smstraffic.ru
+                                    <span>Для запросов СМИ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:88001000258">
+                                    8(800)100-02-58
+                                    <span>Бесплатно по России</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_right">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Компания</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Лицензии</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Мы в СМИ</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Таргетированные SMS рассылки</a></li>
+                                <li><a href="#">IMSI</a></li>
+                                <li><a href="#">Mobile ID</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Разработчикам</a></li>
+                                <li><a href="#">API</a></li>
+                                <li><a href="#">Интеграции</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Решения</a></li>
+                                <li><a href="#"><b>По наравлениям:</b></a></li>
+                                <li><a href="#">Реклама</a></li>
+                                <li><a href="#">Сервис</a></li>
+                                <li><a href="#">Авторизация</a></li>
+                                <li><a href="#">Лояльность</a></li>
+                                <li><a href="#"><b>По департаментам:</b></a></li>
+                                <li><a href="#">Маркетинг</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">Клиентский сервис</a></li>
+                                <li><a href="#">Закупки</a></li>
+                                <li><a href="#"><b>По индустриям:</b></a></li>
+                                <li><a href="#">Финансы</a></li>
+                                <li><a href="#">Ритейл</a></li>
+                                <li><a href="#">Транспорт</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Каналы</a></li>
+                                <li><a href="#">SMS</a></li>
+                                <li><a href="#">Viber Business messages</a></li>
+                                <li><a href="#">Viber Bots</a></li>
+                                <li><a href="#">WhatsApp Business API</a></li>
+                                <li><a href="#">Email</a></li>
+                                <li><a href="#">App Push</a></li>
+                                <li><a href="#">Notify.Mail.ru</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Инсайты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Материалы</a></li>
+                                <li><a href="#">CX Family</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Платформа</a></li>
+                                <li><a href="#">SMS рассылка</a></li>
+                                <li><a href="#">Каскадная рассылка</a></li>
+                                <li><a href="#">Мобильная PUSH платформа</a></li>
+                                <li><a href="#">Чат-платформа</a></li>
+                                <li><a href="#">CDP платформа</a></li>
+                                <li><a href="#">SMS шлюз</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Стоимость услуг</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="f_networks">
+                        <a href="#"><img src="./assets/imgs/vk_ic.svg" alt=""></a>
+                        <a href="#"><img src="./assets/imgs/tg_ic.svg" alt=""></a>
+                        <a href="#"><img src="./assets/imgs/email_ic.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="address_section">
+            <div class="container">
+                <div class="address_block">
+                    <div class="address__top">
+                        <div class="address_item">
+                          <h5>Россия</h5>
+                          <p>Москва,<br>2-й Южнопортовый проезд, д. 20А, с. 4<br>+7 (495) 787-35-95</p>
+                        </div>
+                        <div class="address_item">
+                          <h5>Беларусь</h5>
+                          <p>Минск,<br>220007, ул. Толстого, 10</p>
+                        </div>
+                        <div class="address_item">
+                          <h5>Казахстан</h5>
+                          <p>Алматы,<br>улица Нурлы жол 16, 1 этаж<br>+7 (727) 347-09-18</p>
+                        </div>
+                        <div class="address_item">
+                          <h5>Узбекистан</h5>
+                          <p>Ташкент,<br>Мирабадский район, ул. Нукусская, 86/3<br>+998 (98) 000-30-60</p>
+                        </div>
+                    </div>
+                    <div class="address__bottom">
+                        <div class="address_b_left">
+                            <div class="footer__lang lang-toggle">
+                                <img src="./assets/imgs/lang_ic_f.svg" alt="Language">
+                                <span class="lang-label">RU</span>
+                            </div>
+                            <a href="#" class="footer__policy">Политика в отношении персональных данных</a>
+                        </div>
+                        <div class="footer__copy">© 2000–2025 SMS Traffic / ООО «СМС Трафик»</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Overlay -->
+        <div class="modal-overlay"></div>
+
+        <!-- Modal: Form -->
+        <div class="modal modal-form">
+            <div class="modal-content">
+                <button class="modal-close"><img src="./assets/imgs/close_modal_x.svg" alt=""></button>
+                <div class="any_questions_top">
+                    <h2 class="section_title">Оставить заявку</h2>
+                    <div class="any_ques_subtitle">
+                        Закажите обратный звонок, и мы перезвоним вам сами и ответим на все <br> вопросы или позвоните самостоятельно по этому номеру:
+                        <a href="tel:88001000258" class="tel_ques">8(800)100-02-58</a>
+                    </div>
+                </div>
+                <form class="any_ques_form js-validate-form">
+                    <div class="inputs">
+                        <input type="text" class="input_z" placeholder="Имя" name="name" required>
+                        <input type="email" class="input_z" placeholder="Email" name="email" required>
+                        <input type="tel" class="input_z js-tel-input" placeholder="+" name="tel" required>
+                    </div>
+                    <button type="submit" class="btn_blue btn-submit" disabled>Подробнее</button>
+                    <label class="label_z">
+                        <input type="checkbox" name="agree" required>
+                        <span class="checkbox_visual"></span>
+                        <p>
+                            Согласен на обработку <a href="#">персональных данных.</a>
+                        </p>
+                    </label>
+                </form>
+                
+            </div>
+        </div>
+
+        <!-- Modal: Thank you -->
+        <div class="modal modal-thanks">
+            <div class="modal-content">
+                <button class="modal-close"><img src="./assets/imgs/close_modal_x.svg" alt=""></button>
+                
+                <div class="any_questions_top">
+                    <h2 class="section_title">Спасибо за заявку</h2>
+                    <div class="any_ques_subtitle">
+                        Наши менеджеры перезвонят вам в течении дня
+                    </div>
+                    <button class="btn-close back_btn_m">Назад</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Inputmask -->
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Glightbox js -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- main js -->
+    <script src="./assets/main.js"></script>
+</body>
+</html>
